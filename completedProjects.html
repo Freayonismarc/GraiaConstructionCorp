@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="shortcut icon" href="images/star.png" type="favicon/ico" /> -->
+
+        <title>GRAIA Construction Corporation</title>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/owl.theme.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/flexslider.css">
+        <link rel="stylesheet" href="css/pricing.css">
+        <link rel="stylesheet" href="css/main.css">
+
+
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.flexslider.min.js"></script>
+        <script type="text/javascript">
+            $(window).load(function() {
+                $('.flexslider').flexslider({
+                 animation: "slide",
+                 controlsContainer: ".flexslider-container"
+                });
+            });
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script>
+            function initialize() {
+                var mapCanvas = document.getElementById('map-canvas');
+                var mapOptions = {
+                    center: new google.maps.LatLng(24.909439, 91.833800),
+                    zoom: 16,
+                    scrollwheel: false,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+                var map = new google.maps.Map(mapCanvas, mapOptions)
+
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(24.909439, 91.833800),
+                    title:"Mamma's Kitchen Restaurant"
+                });
+
+                // To add the marker to the map, call setMap();
+                marker.setMap(map);
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+
+
+    </head>
+    <body data-spy="scroll" data-target="#template-navbar">
+
+        <!--== 4. Navigation ==-->
+        <nav id="template-navbar" class="navbar navbar-default custom-navbar-default navbar-fixed-top">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#Food-fair-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img id="logo" src="images/Logo_main.png" class="logo img-responsive">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="Food-fair-toggle">
+                    <ul class="nav navbar-nav navbar-right">
+                            <li><a href="index.html">Home</a></li>                        
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown">about
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="about.html">History</a></li>
+                              <li><a href="about.html">Mission and Vision</a></li>
+                              <li><a href="about.html">Quality Policy</a></li>
+                              <li><a href="about.html">Board of Directors</a></li>
+                            </ul>
+                          </li>
+                          <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="projects.html">projects
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="ongoingProjects.html">On-going Projects</a></li>
+                              <li><a href="completedProjects.html">Completed Projects</a></li>
+                              <!--<li><a href="#">Page 3</a></li>-->
+                            </ul>
+                          </li>
+                        <li><a href="news.html">news</a></li>
+                        <li><a href="careers.html">careers</a></li>
+                        <!--<li><a href="subcon.html">sub-con</a></li>-->
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.row -->
+        </nav>
+
+       <!--==  7. Afordable Pricing  ==-->
+       <section id="pricing" class="pricing">
+            <div id="w">
+                <div class="pricing-filter">
+                    <div class="pricing-filter-wrapper">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-10 col-md-offset-1">
+                                    <div class="section-header">
+                                        <h2 class="pricing-title">Affordable Pricing</h2>
+                                        <ul id="filter-list" class="clearfix">
+                                            <li class="filter" data-filter="all">All</li>
+                                            <li class="filter" data-filter=".breakfast">2015</li>
+                                            <li class="filter" data-filter=".special">2014</li>
+                                            <li class="filter" data-filter=".desert">2013</li>
+                                            <li class="filter" data-filter=".dinner">2012</li>
+                                            <li class="filter" data-filter=".dinner">2011</li>
+                                        </ul><!-- @end #filter-list -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">  
+                        <div class="col-md-10 col-md-offset-1">
+                            <ul id="menu-pricing" class="menu-price">
+                                <li class="item dinner">
+
+                                    <a href="#">
+                                        <img src="images/food1.jpg" class="img-responsive" alt="Food" >
+                                        <div class="menu-desc text-center">
+                                            <span>
+                                                <p>MFO 2-Flood Management Services, Construction Maintenance of Flood Mitigation Structures &amp; Drainage System, Revetment</p>
+                                                DPWH- Cavite District
+                                            </span>
+                                        </div>
+                                    </a>
+                                        
+                                    <p class="white">Zapote-Longos River, Zapote Section, Bacoor City</p>
+                                    <p class="white">2015</p>
+                                </li>
+
+                                <li class="item breakfast">
+
+                                    <a href="#">
+                                        <img src="images/food2.jpg" class="img-responsive" alt="Food" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Prawn Dish</h3>
+                                                Lorem ipsum dolor sit amet
+                                            </span>
+                                        </div>
+                                    </a>
+                                        
+                                    <h2 class="white">$20</h2>
+                                </li>
+                                <li class="item desert">
+
+                                    <a href="#">
+                                        <img src="images/food3.jpg" class="img-responsive" alt="Food" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Salad Dish</h3>
+                                                Consectetur adipisicing elit, sed do eiusmod
+                                            </span>
+                                        </div>
+                                    </a>
+                                        
+                                    <h2 class="white">$18</h2>
+                                </li>
+                                <li class="item breakfast special">
+
+                                    <a href="#">
+                                        <img src="images/food4.jpg" class="img-responsive" alt="Food" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Prawn Dish</h3>
+                                                Tempor incididunt ut labore et dolore
+                                            </span>
+                                        </div>
+                                    </a>
+                                        
+                                    <h2 class="white">$15</h2>
+                                </li>
+                                <li class="item breakfast">
+
+                                    <a href="#">
+                                        <img src="images/food5.jpg" class="img-responsive" alt="Food" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Vegetable Dish</h3>
+                                                Magna aliqua. Ut enim ad minim veniam
+                                            </span>
+                                        </div>
+                                    </a>
+                                        
+                                    <h2 class="white">$20</h2>
+                                </li>
+                                <li class="item dinner special">
+
+                                    <a href="#">
+                                        <img src="images/food6.jpg" class="img-responsive" alt="Food" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Chicken Dish</h3>
+                                                Quis nostrud exercitation ullamco laboris
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <h2 class="white">$22</h2>
+                                </li>
+                                <li class="item desert">
+
+                                    <a href="#">
+                                        <img src="images/food7.jpg" class="img-responsive" alt="Food" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Vegetable Noodles</h3>
+                                                Nisi ut aliquip ex ea commodo
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <h2 class="white">$32</h2>
+                                </li>
+                                <li class="item dinner">
+
+                                    <a href="#">
+                                        <img src="images/food8.jpg" class="img-responsive" alt="Food" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Special Salad</h3>
+                                                Duis aute irure dolor in reprehenderit
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <h2 class="white">$38</h2>
+                                </li>
+                                <li class="item desert special">
+
+                                    <a href="#">
+                                        <img src="images/food9.jpg" class="img-responsive" alt="Food" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Ice-cream</h3>
+                                                Excepteur sint occaecat cupidatat non
+                                            </span>
+                                        </div>
+                                    </a>
+                                    
+                                    <h2 class="white">$38</h2>
+                                </li>  
+                            </ul>
+
+                            <!-- <div class="text-center">
+                                    <a id="loadPricingContent" class="btn btn-middle hidden-sm hidden-xs">Load More <span class="caret"></span></a>
+                            </div> -->
+
+                        </div>   
+                    </div>
+                </div>
+
+            </div> 
+        </section>
+
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div class="copyright text-center">
+                            <p>
+                                &copy; Designed by Eric Luz <a href="#">eric.L714@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mixitup.min.js" ></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/jquery.validate.js"></script>
+        <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+        <script type="text/javascript" src="js/jQuery.scrollSpeed.js"></script>
+        <script src="js/script.js"></script>
+        
+
+    </body>
+</html>
