@@ -312,7 +312,7 @@ nav.shrink .navbar-toggle {
 {
 	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
-	color: #333;
+	color: rgb(255, 255, 255);
 }
 .header-title
 {
@@ -333,18 +333,18 @@ nav.shrink .navbar-toggle {
 }
 .owl-carousel .owl-wrapper, .owl-carousel .owl-item:nth-child(1) .item
 {
-	background: url('../images/1.jpg');
+	background: url('../images/architecture-construction-build-building-162557.jpeg');
 	background-size: cover;
 	background-position: bottom;
 }
 .owl-carousel .owl-wrapper, .owl-carousel .owl-item:nth-child(2) .item
 {
-	background: url('../images/2.jpg');
+	background: url('../images/pexels-photo-410730.jpeg');
 	background-size: cover;
 }
 .owl-carousel .owl-wrapper, .owl-carousel .owl-item:nth-child(3) .item
 {
-	background: url('../images/3.jpg');
+	background: url('../images/pexels-photo-38070.jpeg');
 	background-size: cover;
 }
 .owl-theme .owl-controls .owl-buttons div
@@ -381,7 +381,7 @@ nav.shrink .navbar-toggle {
 ==================================================*/
 .about-bg
 {
-	background: url('../images/About-C-bg.jpg');
+	background: url('../images/construction-site-build-construction-work-159306.jpeg');
 	background-repeat: no-repeat;
 	background-size: 85%;
   	background-position-x: 15%;
