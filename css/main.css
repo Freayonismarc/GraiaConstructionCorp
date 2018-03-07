@@ -84,13 +84,13 @@ body
 .btn-middle {
 	background-color: transparent;
 	padding: 15px 30px;
-	border: 1px solid #8bc34a;
-	color: #5c9233;
+	border: 1px solid #000a56;
+	color: #000a56;
 	margin: 25px 0px;
 }
 
 .btn-middle:hover {
-	background-color: #8bc34a;
+	background-color: #000a56;
 	color: #fff;
 	box-shadow: 0px 2px 5px #948E8E;
 }
@@ -160,7 +160,7 @@ body
 }
 .color-bg
 {
-	background: #8bc34a;
+	background: #000a56;
 }
 .section-bg
 {
@@ -259,7 +259,7 @@ input.empty, textarea.empty {
 }
 
 .navbar-default .navbar-collapse {
-	border-color: #669D38;
+	border-color: #000a56;
 	background-color: #dbdbdb;
 }
 
@@ -460,7 +460,7 @@ nav.shrink .navbar-toggle {
 
 .menu-system {
     width: 100%;
-    color: #8bc34a;
+    color: #000a56;
 }
 
 .half 
@@ -517,7 +517,7 @@ nav.shrink .navbar-toggle {
 
 .opening-time 
 {
-	background-color: rgb(139, 195, 74);
+	background-color: #000a56;
 	color: #fff;
 	margin-top: -50px;
 	padding: 20px 40px;
@@ -648,7 +648,7 @@ footer a
 
 footer a:hover
 {
-	color: #00710A;
+	color: #000a56;
 	text-decoration: none;
 }
 /*=================================================
