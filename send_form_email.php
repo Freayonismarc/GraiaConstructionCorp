@@ -182,7 +182,17 @@ $headers = 'From: '.$email_from."\r\n".
                         </ul>
                     </div><!-- /.navbar-collapse -->
         </nav>
-<p>We appreciate your feedback. <a href="index.html">BACK TO HOME PAGE</a></p>
+        <section id="contact-us">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="title">
+            <p><strong>We appreciate your feedback. <a href="index.html">BACK TO HOME PAGE</a></strong></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 <footer>
             <div class="container">
