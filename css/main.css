@@ -584,36 +584,36 @@ nav.shrink .navbar-toggle {
 
 .fb
 {
-	background: url(../images/social/facebook_color.png);
+	background: url(../images/social/facebook.png);
 }
 
 .fb:hover
 {
-	background: url(../images/social/facebook_black.png);
+	background: url(../images/social/facebook2.png);
 }
 
 .twit {
-	background: url(../images/social/twitter_color.png);
+	background: url(../images/social/twitter.png);
 }
 
 .twit:hover {
-	background: url(../images/social/twitter_black.png);
+	background: url(../images/social/twitter2.png);
 }
 
 .g-plus {
-	background: url(../images/social/g-plus_color.png);
+	background: url(../images/social/linkedin.png);
 }
 
 .g-plus:hover {
-	background: url(../images/social/g-plus_black.png);
+	background: url(../images/social/linkedin2.png);
 }
-
+2
 .link {
-	background: url(../images/social/linkedin_color.png);
+	background: url(../images/social/google-plus.png);
 }
 
 .link:hover {
-	background: url(../images/social/linkedin_black.png);
+	background: url(../images/social/google-plus2.png);
 }
 
 #map-canvas {
