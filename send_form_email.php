@@ -123,7 +123,7 @@ $headers = 'From: '.$email_from."\r\n".
 
                 var marker = new google.maps.Marker({
                     position: new google.maps.LatLng(24.909439, 91.833800),
-                    title:"Mamma's Kitchen Restaurant"
+                    title:"GRAIA Construction Corporation"
                 });
 
                 // To add the marker to the map, call setMap();
