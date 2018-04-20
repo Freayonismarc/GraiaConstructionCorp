@@ -1,146 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <link rel="shortcut icon" href="images/star.png" type="favicon/ico" /> -->
 
-        <title>GRAIA Construction Corporation</title>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="shortcut icon" href="images/star.png" type="favicon/ico" /> -->
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/owl.carousel.css">
-        <link rel="stylesheet" href="css/owl.theme.css">
-        <link rel="stylesheet" href="css/animate.css">
-        <link rel="stylesheet" href="css/flexslider.css">
-        <link rel="stylesheet" href="css/pricing.css">
-        <link rel="stylesheet" href="css/main.css">
+    <title>GRAIA Construction Corporation</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/pricing.css">
+    <link rel="stylesheet" href="css/main.css">
 
 
-        <script src="js/jquery-1.11.2.min.js"></script>
-        <script type="text/javascript" src="js/jquery.flexslider.min.js"></script>
-        <script type="text/javascript">
-            $(window).load(function() {
-                $('.flexslider').flexslider({
-                 animation: "slide",
-                 controlsContainer: ".flexslider-container"
-                });
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider.min.js"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                controlsContainer: ".flexslider-container"
             });
-        </script>
+        });
+    </script>
 
-        <script src="https://maps.googleapis.com/maps/api/js"></script>
-        <script>
-            function initialize() {
-                var mapCanvas = document.getElementById('map-canvas');
-                var mapOptions = {
-                    center: new google.maps.LatLng(24.909439, 91.833800),
-                    zoom: 16,
-                    scrollwheel: false,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
-                }
-                var map = new google.maps.Map(mapCanvas, mapOptions)
-
-                var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(24.909439, 91.833800),
-                    title:"Mamma's Kitchen Restaurant"
-                });
-
-                // To add the marker to the map, call setMap();
-                marker.setMap(map);
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+        function initialize() {
+            var mapCanvas = document.getElementById('map-canvas');
+            var mapOptions = {
+                center: new google.maps.LatLng(24.909439, 91.833800),
+                zoom: 16,
+                scrollwheel: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
             }
-            google.maps.event.addDomListener(window, 'load', initialize);
-        </script>
+            var map = new google.maps.Map(mapCanvas, mapOptions)
+
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(24.909439, 91.833800),
+                title: "Mamma's Kitchen Restaurant"
+            });
+
+            // To add the marker to the map, call setMap();
+            marker.setMap(map);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 
 
-    </head>
-    <body data-spy="scroll" data-target="#template-navbar">
+</head>
 
-        <!--== 4. Navigation ==-->
-        <nav id="template-navbar" class="navbar navbar-default custom-navbar-default navbar-fixed-top">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#Food-fair-toggle">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">
-                        <img id="logo" src="images/Logo_main.png" class="logo img-responsive">
-                    </a>
-                </div>
+<body data-spy="scroll" data-target="#template-navbar">
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="Food-fair-toggle">
-                        <ul class="nav navbar-nav navbar-right">
-                                <li><a href="index.html">Home</a></li>                        
+    <!--== 4. Navigation ==-->
+    <nav id="template-navbar" class="navbar navbar-default custom-navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#Food-fair-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img id="logo" src="images/Logo_main.png" class="logo img-responsive">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="Food-fair-toggle">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">about</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="projects.html">projects
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
                             <li>
-                                <a href="about.html">about</a>
-                              </li>
-                              <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="projects.html">projects
-                                <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                  <li><a href="ongoingProjects.html">On-going Projects</a></li>
-                                  <li><a href="completedProjects.html">Completed Projects</a></li>
-                                  <!--<li><a href="#">Page 3</a></li>-->
-                                </ul>
-                              </li>
-                            <li><a href="news.html">news</a></li>
-                            <li><a href="careers.html">careers</a></li>
-                            <!--<li><a href="subcon.html">sub-con</a></li>-->
-                            <li><a href="contact.html">contact</a></li>
+                                <a href="ongoingProjects.html">On-going Projects</a>
+                            </li>
+                            <li>
+                                <a href="completedProjects.html">Completed Projects</a>
+                            </li>
+                            <!--<li><a href="#">Page 3</a></li>-->
                         </ul>
-                    </div><!-- /.navbar-collapse -->
-            </div><!-- /.row -->
-        </nav>
-        		
-        <section id="placeholder" class="about">
-                <div class="wrapper">
-                    <div class="container-fluid">
-                        <div class="row dis-table">
-                            </div>
-                            <center>
-                            <div class="col-xs-12 col-sm-12 dis-table-cell">
-                                <div class="section-content">
-                                        <h4><strong>We'll update this page as soon as something new comes up!</strong></h4>
-                                    </center>
-                                </div> <!-- /.section-content -->
-                            </div>
-                        </div> <!-- /.row -->
-                    </div> <!-- /.container-fluid -->
-                </div> <!-- /.wrapper -->
-            </section> <!-- /#about --> 
+                    </li>
+                    <li>
+                        <a href="news.html">news</a>
+                    </li>
+                    <li>
+                        <a href="careers.html">careers</a>
+                    </li>
+                    <!--<li><a href="subcon.html">sub-con</a></li>-->
+                    <li>
+                        <a href="contact.html">contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.row -->
+    </nav>
 
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header"><a href="contact.html" id="contact-button" class="mdl-button mdl-button--fab mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast mdl-shadow--4dp"></a>
-      </div>
+    <section id="placeholder" class="about">
+        <div class="wrapper">
+            <div class="container-fluid">
+                <div class="row dis-table">
+                </div>
+                <center>
+                    <div class="col-xs-12 col-sm-12 dis-table-cell">
+                        <div class="section-content">
+                            <h4>
+                                <strong>We'll update this page as soon as something new comes up!</strong>
+                            </h4>
+                </center>
+                </div>
+                <!-- /.section-content -->
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+        </div>
+        <!-- /.wrapper -->
+    </section>
+    <!-- /#about -->
 
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                        <div class="copyright text-center">
-                            <p>
-                                &copy; GRAIA Construction Corporation <a href="#"> 2018</a>
-                            </p>
-                        </div>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <a href="contact.html" id="contact-button" class="mdl-button mdl-button--fab mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast mdl-shadow--4dp"></a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="copyright text-center">
+                        <p>
+                            &copy; GRAIA Construction Corporation
+                            <a href="#"> 2018</a>
+                        </p>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
-    
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script type="text/javascript" src="js/jquery.mixitup.min.js" ></script>
-        <script src="js/wow.min.js"></script>
-        <script src="js/jquery.validate.js"></script>
-        <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
-        <script type="text/javascript" src="js/jQuery.scrollSpeed.js"></script>
-        <script src="js/script.js"></script>
-        
 
-    </body>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+    <script type="text/javascript" src="js/jQuery.scrollSpeed.js"></script>
+    <script src="js/script.js"></script>
+
+
+</body>
+
 </html>

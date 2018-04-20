@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GRAIA Admin Login</title>
+    <!-- Include CSS File Here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/pricing.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Include JS File Here -->
+    <script src="js/login.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#Food-fair-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img id="logo" src="images/Logo_main.png" class="logo img-responsive">
+            </a>
+        </div>
+        <div class="main">
+            <h2>
+                <br>
+                <br>
+                <br>GRAIA Construction Corporation ADMIN Login</h2>
+            <form id="form_id" method="post" name="myform">
+                <label for="uname">
+                    <b>Username</b>
+                </label>
+                <input type="text" placeholder="Enter Username" name="username" id="username" required>
+
+                <label for="psw">
+                    <b>Password</b>
+                </label>
+                <input type="password" placeholder="Enter Password" name="password" id="password" required>
+
+                <input type="button" value="Login" id="submit" onclick="validate()" />
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -936,6 +936,21 @@ button:hover {
     opacity: 0.8;
 }
 
+input[type=button]{
+font-size: 16px;
+background: linear-gradient(#72729b 5%, #251a8a 100%);
+border: 1px solid #504f4d;
+color: rgb(245, 244, 241);
+font-weight: bold;
+cursor: pointer;
+width: 100%;
+border-radius: 5px;
+padding: 10px 0;
+outline:none;
+}
+input[type=button]:hover{
+background: linear-gradient(#dbdad6 5%, #3f3e3c 100%);
+}
 /* Extra styles for the cancel button */
 .cancelbtn {
     width: auto;
