@@ -2,102 +2,136 @@
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="shortcut icon" href="images/star.png" type="favicon/ico" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <title>GRAIA Construction Corporation</title>
+    <title>GRAIA Administrator</title>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/flexslider.css">
-    <link rel="stylesheet" href="css/pricing.css">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/login.css">
-
-
-    <script src="js/jquery-1.11.2.min.js"></script>
-    <script type="text/javascript" src="js/jquery.flexslider.min.js"></script>
-    <script type="text/javascript">
-        $(window).load(function () {
-            $('.flexslider').flexslider({
-                animation: "slide",
-                controlsContainer: ".flexslider-container"
-            });
-        });
-    </script>
-
-    <!--<script src="https://maps.googleapis.com/maps/api/js"></script>
-        <script>
-            function initialize() {
-                var mapCanvas = document.getElementById('map-canvas');
-                var mapOptions = {
-                    center: new google.maps.LatLng(14.547078, 121.051516),
-                    zoom: 16,
-                    scrollwheel: false,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
-                }
-                var map = new google.maps.Map(mapCanvas, mapOptions)
-
-                var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(14.547078, 121.051516),
-                    title:"GRAIA Construction Corporation"
-                });
-
-                // To add the marker to the map, call setMap();
-                marker.setMap(map);
-            }
-            google.maps.event.addDomListener(window, 'load', initialize);
-        </script>-->
-
 
 </head>
 
-<body data-spy="scroll" data-target="#template-navbar">
+<body>
 
-    <button onclick="location.href = 'adminlogin.html'">Logout</button>
+    <div id="wrapper">
 
-    <h2>Admin Page under construction...</h2>
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="admin.html">
+                        Administrator Panel
+                    </a>
+                <li>
+                    <a href="adminlogin.html">Logout</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
 
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <img id="logo" src="images/Logo_main.png" class="logo img-responsive">
+                <h1> GRAIA Administrator Panel</h1>
+                <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Menu</a>
+                <section class="adminPanel">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+                                <div class="row">
+                                    <form class="adminPanel" method="post" action="upload.php">
+                                        <h2>Add Projects</h2>
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="form-group">
+                                                <select name="status" type="text" class="form-control" id="status" required="required">
+                                                    <option disabled="disabled">Project Status</option>
+                                                    <option value="ongoing">On-going</option>
+                                                    <option value="completed">Completed</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                Date Started *:
+                                                <input name="date" type="date" class="form-control" id="date1" required="required">
+                                            </div>
+                                            <div class="form-group">
+                                                Date Completed:
+                                                <input name="date" type="date" class="form-control" id="date2" required="required">
+                                            </div>
+                                            <div class="form-group">
+                                                <input name="site" type="text" class="form-control" id="site" required="required" placeholder="Site Address">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            Select project image to upload:
+                                            <input type="file" name="fileToUpload" id="fileToUpload">
+                                        </div>
+                                        <div class="col-md-6 col-sm-6">
+                                            <textarea name="details" type="text" class="form-control" id="details" rows="7" required="required" placeholder="Project Details"></textarea>
+                                        </div>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3">
-                    <div class="copyright text-center">
-                        <p>
-                            &copy; GRAIA Construction Corporation
-                            <a href="#"> 2018</a>
-                        </p>
+                                        <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+                                            <div class="text-center">
+                                                <br>
+                                                <button type="submit" id="submit" name="submit" class="btn btn-send">Add Project</button>
+                                            </div>
+                                        </div>
+                                        
+                                        <h2>Add News</h2>
+                                        <div class="col-md-12 col-sm-12">
+                                                <div class="form-group">
+                                                        News Header:
+                                                        <input name="header" type="text" class="form-control" id="header" required="required" placeholder="Header here...">
+                                                    </div>
+                                            <div class="form-group">
+                                                <input name="date" type="date" class="form-control" id="date1" required="required" placeholder="Date">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            Select an image to upload:
+                                            <input type="file" name="fileToUpload" id="fileToUpload">
+                                        </div>
+                                        <div class="col-md-6 col-sm-6">
+                                            <textarea name="details" type="text" class="form-control" id="details" rows="7" required="required" placeholder="News Details"></textarea>
+                                        </div>
+
+                                        <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+                                            <div class="text-center">
+                                                <br>
+                                                <button type="submit" id="submit" name="submit" class="btn btn-send">Add News</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </section>
             </div>
         </div>
-    </footer>
+        <!-- /#page-content-wrapper -->
 
+    </div>
+    <!-- /#wrapper -->
 
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/jquery.validate.js"></script>
-    <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
-    <script type="text/javascript" src="js/jQuery.scrollSpeed.js"></script>
-    <script src="js/script.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
     <script>
-        // Get the modal
-        var modal = document.getElementById('id01');
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
     </script>
 
 </body>
